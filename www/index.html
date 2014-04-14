@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+			<!--[if !IE 7]>
+			<style type="text/css">
+			#wrap {display:table;height:100%}
+			</style>
+			<![endif]-->
+        <meta charset="utf-8" />
+        <meta name="description" content="Acompanhamento de Treino">
+        <meta name="keywords" content="academia treino sistema">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/style.css" rel="stylesheet" media="screen">
+        <!--<link href="bootstrap-3.1.1-dist/css/bootstrap-responsive.css" rel="stylesheet">-->
+        <script src="js/jquery 1-11.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.confirm.js"></script>  
+        <script src="js/tooltip.js"></script>
+        <script src="js/poopver.js"></script>
+        <script src="js/script.js"></script>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		
+        <title>Acompanhamento de Treino</title>
+	</head>
+
+	<body>
+<div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" style="margin-top:-20px;"><img src="img/logo.png"></a>
+          <a class="navbar-brand" href="#">Instrutores</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav" id="incluirMenu">
+            <li><a href="#" id="menu1" onclick="ir(1)">Personal (1)</a></li>
+           </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+</div>
+		
+			<div class="panel panel-body topo">
+					<div class="row-fluid">
+						<!-- <div class="span3 offset2">
+								<div class="col-xs-1 fixed">
+									 <a href="#" class="thumbnail" style="min-height:100px; width: 110px;"><img src="logo.png" style="min-height:100px; min-width: 100px;"></a>
+								</div>	
+						</div> -->								
+						<div class="span12" style="text-ain">
+							<h2 class="tituloTopo"><strong>techgym </strong>Acompanhamento</h2>	
+						</div>		
+					</div>	
+			</div>											
+				<div class="panel panel-body">
+						<div class="row">
+							<h3 class="personal"><input class="inputPersonal" placeholder="Personal(1)" id="personalNome1" onkeyup="alteraTopo(1)"/></h3>
+	              		</div>
+					<div class="panel panel-default">
+						<!-- <table class="table table-hover table-bordered"> -->
+							<table class="table table-hover table-bordered" id="tabela1">
+						 	<tr>
+						 			<th class='span2'>Nome do Aluno</th>
+						 			<th class='span1'>Início</th>
+						 			<th class='span1'>Fim</th>
+						 			<th class='span3'>Ação</th>
+						 	</tr>
+						 	
+							 	<tr class="" id="linha1">
+							 			<td><input class="aluno" id="nome1" placeholder="nome" data-placement="top" data-trigger="manual" data-title="<div style='text-align: center; color: #d9534f;'><strong >Campo obrigatório</strong></div>"data-content="Insira o nome do aluno."/></td>
+							 			<td><input id="inicio1" disabled="disabled" style="Display:none;"/><div class="mostrarHora" id="MostrarInicio1"></div></td>
+							 			<td><input id="fim1" disabled="disabled"style="Display:none;"/><div class="mostrarHora" id="MostrarFim1"></div></td>
+							 			<td>
+					  					  <button class="btn btn-success" type="button" onclick="inicio(1, 1)" id="btnIniciar1"><span class="glyphicon glyphicon-plus brown"></span></button>
+	  				  					  <button class="btn btn-primary" type="button" onclick="fim(1, 1)" id="btnFim1" style="display:none"><span class="glyphicon glyphicon-ok brown"></span></button>	
+	  				  					  <button class="btn btn-danger remover confirm" onclick="confirma(1, true, null)"><span class="glyphicon glyphicon-remove brown"></span></button>			  
+							 			</td>						 			
+							 	</tr>	
+						</table>						
+					</div>
+					<div id="todosValores"></div>
+					<div id="tabelas"></div>
+					<button class="btn btn-large btn-primary" type="button" id="adicionar" style="height:45px; weidth:60px;"><img src="img/academia.png" height="40px" style="margin-bottom:16px; margin-left: -3px; margin-top:-3px; ;float:center;"></button>
+				</div>	
+				<div class="rodape">
+        			<div class="mensagemBottom"><p class="text-muted"><strong>Dezenhar ©</strong> 2014 Todos os Direitos Reservados | Dezenhar</p></div>
+     			</div>
+			</div>		
+
+		
+	</body>
+</html>        

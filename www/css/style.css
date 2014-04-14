@@ -1,0 +1,90 @@
+.table>tbody>tr>td.danger, .table>tbody>tr>th.danger, .table>tbody>tr.danger>td, .table>tbody>tr.danger>th{
+	background-color: #f89290;
+	color: #ac2825;
+}
+
+.success{
+	color:#498447;
+}
+
+.table-hover>tbody>tr>td.danger:hover, .table-hover>tbody>tr>th.danger:hover, .table-hover>tbody>tr.danger:hover>td, .table-hover>tbody>tr.danger:hover>th{
+	background-color: #f6817e;
+}
+
+.brown{
+	color:#fff;
+	
+}
+
+.mostrarHora{
+	margin-top: 5px;
+}
+
+.topo{
+	background-color: #d1cccc;
+}
+
+th{
+	color:#333;
+}
+
+tr{
+	color: #357ebd;
+}
+
+input.aluno {
+	background-color: transparent;
+    border: 0px; 
+    width: 100%;
+    height: 100%;
+}
+
+input.inputPersonal {
+	background-color: transparent;
+    border: 0px; 
+    width: 100%;
+    height: 40px;
+}
+
+.fixo{
+	width: 85px; 
+}
+
+.fixo2{
+	margin-right: 4px;	
+}
+
+.pag{
+	margin-top: 40px;
+}
+
+.tituloTopo{
+	font: normal 200%/200% Oswald;
+	text-align: center;
+}
+
+.personal{
+	color: #357ebd;
+}
+
+.mensagemBottom{
+    margin-top: 5px;
+}
+
+ body {
+ 	padding-top: 30px;
+ 	background-image: url("http://dezenhar.com.br/techgym/fundo.png");
+ 	background-repeat: repeat-x repeat-y;
+ 	padding-bottom:  0px;
+ 
+ }
+
+.rodape {
+	font-size: 12px;
+    text-align: center;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+}
